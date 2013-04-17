@@ -1,9 +1,11 @@
 chown autreUtilisateur MonFichier
 #Change le propriétaire de MonFichier en autreUtilisateur
-chown -R lui:nous monRep
-#Change le propriétaire en lui et le groupe propriétaire en nous du répertoire monRep ainsi que tout ce qu'il contient
 
-#- R fonction récursive 
+chown lui:nous monRep
+#Change le propriétaire en lui et le groupe propriétaire en nous du répertoire monRep 
+
+chown -R lui:nous monRep
+#- R fonction récursive donc la modification est effectuée dans tous les sous dossiers et les fichiers du dossier racine 
 #Le propriétaire et le groupe propriétaire peuvent être différents,
 #en effet le groupe propriétaire n’est pas forcément le groupe primaire du propriétaire 
 #(groupe contenant que le propriétaire) et le propriétaire n’est pas forcément membre du groupe. 
