@@ -14,3 +14,7 @@ chown -R lui:nous monRep
 
 ls-l
 #vérifier les droits 
+
+find . -type f -name '*.pdf' -print0 | xargs -0 chown someuser:somegroup
+#xargs traiter chaque input
+#print0 échappe les sauts de lignes
