@@ -11,3 +11,6 @@ chown -R lui:nous monRep
 #(groupe contenant que le propriétaire) et le propriétaire n’est pas forcément membre du groupe. 
 #Lorsque l’on crée un fichier ou un répertoire le propriétaire est celui qui l’a crée
 #et le groupe est le groupe primaire de l’utilisateur.
+
+ls-l
+#vérifier les droits 
